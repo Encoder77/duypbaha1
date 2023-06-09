@@ -19,20 +19,17 @@ function plusLess(event, type) {
 	}
 }
 
-const cards = document.querySelectorAll(".blog_section")
-
+const cards = document.querySelectorAll(".card")
 
 cards.forEach(el  => {
-	const full = el.childNodes[1]
-	const btn = full.childNodes[3]
-	const article = full.childNodes[1]
-	const struct = article.childNodes[1]
-	const texts  = struct.childNodes[3]
-	const figure  = struct.childNodes[1]
-	const pri = texts.childNodes[5]
-	const img = figure.childNodes[1].currentSrc
-	const name = texts.childNodes[1].innerText
-	const price = pri.childNodes[1].nodeValue
+	const image = el.childNodes[3]
+	const img = image.childNodes[1].currentSrc
+	const text = el.childNodes[5]
+	const name = text.childNodes[1].innerText
+	const price1  = el.childNodes[7]
+	const price  = price1.childNodes[0].nodeValue
+	const button = el.childNodes[13]
+	const btn = button.childNodes[1]
 	btn.addEventListener("click", () => {
 		const storage = localStorage.getItem("cart") || "[]"
 		const cart = JSON.parse(storage)
