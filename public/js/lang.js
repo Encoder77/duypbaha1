@@ -68,6 +68,7 @@
                 "dostawka": 'Доставка',
                 "umumyjem": 'Всего',
                 "sargytet": 'Заказать',
+                "cart": 'КОРЗИНА'
               }
           },
           "tm": {
@@ -138,6 +139,7 @@
                 "dostawka": 'Dostawka',
                 "umumyjem": 'Umumy',
                 "sargytet": 'Sarga',
+                "cart": 'Sebet'
               }
           },
           "en": {
@@ -209,6 +211,7 @@
               "dostawka": 'Delivery',
               "umumyjem": 'Total',
               "sargytet": 'Checkout',
+              "cart": 'Cart'
             }
         },
       }

@@ -1,7 +1,6 @@
 function handleAdd(event) {
 	const card = event.target.closest('.card')
 	card.classList.add('add-active')
-	console.log(card)
 }
 
 function plusLess(event, type) {
@@ -20,15 +19,15 @@ function plusLess(event, type) {
 }
 
 const cards = document.querySelectorAll(".card")
-
 cards.forEach(el  => {
 	const image = el.childNodes[3]
 	const img = image.childNodes[1].currentSrc
 	const text = el.childNodes[5]
 	const name = text.childNodes[1].innerText
-	const price1  = el.childNodes[7]
-	const price  = price1.childNodes[0].nodeValue
+	const price  = el.childNodes[7].innerText
 	const button = el.childNodes[13]
+	const pic = button.childNodes[3]
+	const pice = pic.childNodes[3].value
 	const btn = button.childNodes[1]
 	btn.addEventListener("click", () => {
 		const storage = localStorage.getItem("cart") || "[]"
